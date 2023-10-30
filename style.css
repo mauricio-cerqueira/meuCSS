@@ -1,22 +1,92 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 170px auto auto auto;
+    gap: 50px;
+    padding: 10px;
+
+    background-image: url("img/fundo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    ;
+}
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    color: white;
+    background-color: chocolate;
+    border-radius: 20px 50px 20px 50px;
+  }
+.grid-top{
+    grid-column: span 4;
+    background-image: linear-gradient(to right, chocolate , #f2a16e);
+
+}
+.grid-menu{
+    grid-row: span 2;
+    box-shadow: 10px 5px 5px black;
+    align-items: center;
+    justify-items: center;
+
+}
+.grid-geral{
+    grid-column: span 3;
+    background-image: linear-gradient(to right, chocolate , #f2a16e);
+    box-shadow: 10px 5px 5px black;
+}
+.grid-cursos{
+    
+}
+.grid-contatos{
+    grid-column: span 2;
+}
+.grid-endereco{
+    grid-column: span 2;
+}
 body {
     background-color: black;
 }
 h1 {
-    color: green;
-    background-color: yellow;
     text-align: center;
 }
+h1.principal{
+    font-size: 50px;
+}
 p{
-    color: blue;
-    background-color: yellow;
+
 }
 p.contatos{
-    color: blue;
-    background-color: antiquewhite;
+
 }
 
 #endereco{
-    color: black;
-    background-color: white;
     font-family: verdana;
 }
+#button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(236, 193, 100);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  #button:hover {background-color: #f9f62e}
+  
+  #button:active {
+    background-color: #f3e33c;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  div.vertical{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
